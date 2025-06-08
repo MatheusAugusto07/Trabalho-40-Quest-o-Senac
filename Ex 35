@@ -1,0 +1,12 @@
+int diagonalMaior, diagonalMenor;
+double area;
+
+Console.Write("Digite o valor da diagonal maior do losango: ");
+diagonalMaior = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Digite o valor da diagonal menor do losango: ");
+diagonalMenor = Convert.ToInt32(Console.ReadLine());
+
+area = (diagonalMaior * diagonalMenor) / 2.0;
+
+Console.WriteLine("A área do losango é: " + area);
