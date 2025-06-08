@@ -1,0 +1,11 @@
+int anos, resto, meses, diasRestantes, dias;
+
+Console.WriteLine("Digite a quantidades de dias em acidentes");
+dias = Convert.ToInt32(Console.ReadLine());
+
+anos = dias / 360;
+resto = dias / 360;
+meses = resto / 30;
+diasRestantes = resto / 30;
+
+Console.WriteLine("Tempo sem acidentes" + anos + meses + diasRestantes + dias );
