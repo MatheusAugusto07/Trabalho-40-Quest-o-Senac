@@ -1,0 +1,8 @@
+int pesoKg, pesoGramas;
+
+Console.Write("Digite o peso da pessoa (em kg): ");
+pesoKg = Convert.ToInt32(Console.ReadLine());
+
+pesoGramas = pesoKg * 1000;
+
+Console.WriteLine("O peso em gramas é: " + pesoGramas + " g");
