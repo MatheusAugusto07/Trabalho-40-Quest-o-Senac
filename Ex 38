@@ -1,0 +1,17 @@
+int anoNascimento, anoAtual, idadeAnos, idadeMeses, idadeDias, idadeSemanas;
+
+Console.Write("Digite o ano de nascimento: ");
+anoNascimento = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Digite o ano atual: ");
+anoAtual = Convert.ToInt32(Console.ReadLine());
+
+idadeAnos = anoAtual - anoNascimento;
+idadeMeses = idadeAnos * 12;
+idadeDias = idadeAnos * 365; // desconsiderando anos bissextos
+idadeSemanas = idadeDias / 7;
+
+Console.WriteLine("Idade em anos: " + idadeAnos);
+Console.WriteLine("Idade em meses: " + idadeMeses);
+Console.WriteLine("Idade em dias: " + idadeDias);
+Console.WriteLine("Idade em semanas: " + idadeSemanas);
