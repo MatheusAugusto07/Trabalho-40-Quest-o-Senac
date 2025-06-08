@@ -1,0 +1,18 @@
+int x1, y1, x2, y2;
+double distancia;
+
+Console.Write("Digite a coordenada X do primeiro ponto: ");
+x1 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Digite a coordenada Y do primeiro ponto: ");
+y1 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Digite a coordenada X do segundo ponto: ");
+x2 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Digite a coordenada Y do segundo ponto: ");
+y2 = Convert.ToInt32(Console.ReadLine());
+
+distancia = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+
+Console.WriteLine("A distância entre os pontos é: " + distancia.ToString("F2"));
