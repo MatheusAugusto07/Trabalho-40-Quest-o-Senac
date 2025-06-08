@@ -1,0 +1,13 @@
+int numero, centena, dezena, unidade;
+
+
+Console.Write("Digite um número inteiro de até 3 dígitos: ");
+numero = Convert.ToInt32(Console.ReadLine());
+
+centena = numero / 100;
+dezena = (numero % 100) / 10;
+unidade = numero % 10;
+
+Console.WriteLine("CENTENA = " + centena);
+Console.WriteLine("DEZENA = " + dezena);
+Console.WriteLine("UNIDADE = " + unidade);
