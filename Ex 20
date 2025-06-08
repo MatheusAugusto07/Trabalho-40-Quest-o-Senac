@@ -1,0 +1,12 @@
+int quantidadeBlusas, quantidadeNovelos;
+double novelosPorBlusa;
+
+Console.Write("Digite a quantidade de blusas produzidas: ");
+quantidadeBlusas = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Digite a quantidade total de novelos usados: ");
+quantidadeNovelos = Convert.ToInt32(Console.ReadLine());
+
+novelosPorBlusa = (double)quantidadeNovelos / quantidadeBlusas;
+
+Console.WriteLine("São usados em média " + novelosPorBlusa.ToString("F2") + " novelos por blusa.");
