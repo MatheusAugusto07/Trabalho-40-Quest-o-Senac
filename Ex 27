@@ -1,0 +1,11 @@
+ double num1, num2;
+
+        Console.Write("Digite o primeiro número: ");
+        num1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Digite o segundo número (diferente de zero): ");
+        num2 = Convert.ToDouble(Console.ReadLine());
+
+        double resultado = num1 / num2;
+
+        Console.WriteLine($"O resultado da divisão é: {resultado:F2}");
