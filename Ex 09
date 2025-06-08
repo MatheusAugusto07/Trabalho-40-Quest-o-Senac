@@ -1,0 +1,15 @@
+int qtdP, qtdM, qtdG;
+double total;
+
+Console.Write("Digite a quantidade de camisetas tamanho P vendidas: ");
+qtdP = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Digite a quantidade de camisetas tamanho M vendidas: ");
+qtdM = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Digite a quantidade de camisetas tamanho G vendidas: ");
+qtdG = Convert.ToInt32(Console.ReadLine());
+
+total = qtdP * 10.0 + qtdM * 12.0 + qtdG * 15.0;
+
+Console.WriteLine("Valor total arrecadado: R$ " + total.ToString("F2"));
