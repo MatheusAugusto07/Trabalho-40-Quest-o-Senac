@@ -1,0 +1,14 @@
+ double num1, num2, num3;
+
+        Console.Write("Digite o primeiro número: ");
+        num1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Digite o segundo número: ");
+        num2 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Digite o terceiro número: ");
+        num3 = Convert.ToDouble(Console.ReadLine());
+
+        double resultado = num1 * num2 * num3;
+
+        Console.WriteLine($"O resultado da multiplicação é: {resultado}");
