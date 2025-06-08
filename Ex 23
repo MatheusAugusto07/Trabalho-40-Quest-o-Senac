@@ -1,0 +1,17 @@
+double alturaPessoa, sombraPessoa, sombraPredio, alturaPredio;
+
+        Console.Write("Digite a sua altura (em metros): ");
+        alturaPessoa = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Digite o comprimento da sua sombra (em metros): ");
+        sombraPessoa = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Digite o comprimento da sombra do prédio (em metros): ");
+        sombraPredio = Convert.ToDouble(Console.ReadLine());
+
+        // Aplicando regra de três:
+        // alturaPredio / sombraPredio = alturaPessoa / sombraPessoa
+        // alturaPredio = (alturaPessoa * sombraPredio) / sombraPessoa
+        alturaPredio = (alturaPessoa * sombraPredio) / sombraPessoa;
+
+        Console.WriteLine($"A altura estimada do prédio é: {alturaPredio:F2} metros.");
