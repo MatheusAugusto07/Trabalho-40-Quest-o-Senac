@@ -1,0 +1,9 @@
+double preco;
+
+        Console.Write("Digite o preço do produto: ");
+        preco = Convert.ToDouble(Console.ReadLine());
+
+        double desconto = preco * 0.10;
+        double novoPreco = preco - desconto;
+
+        Console.WriteLine($"O novo preço com 10% de desconto é: R$ {novoPreco:F2}");
