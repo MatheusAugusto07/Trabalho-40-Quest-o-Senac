@@ -1,0 +1,19 @@
+int quantidadeSanduiches, gramasQueijo, gramasPresunto, gramasCarne;
+double kgQueijo, kgPresunto, kgCarne;
+
+Console.Write("Digite a quantidade de sanduíches a fazer: ");
+
+quantidadeSanduiches = Convert.ToInt32(Console.ReadLine());
+
+gramasQueijo = quantidadeSanduiches * 2 * 50;
+gramasPresunto = quantidadeSanduiches * 1 * 50;
+gramasCarne = quantidadeSanduiches * 1 * 100;
+
+kgQueijo = gramasQueijo / 1000.0;
+kgPresunto = gramasPresunto / 1000.0;
+kgCarne = gramasCarne / 1000.0;
+
+Console.WriteLine("\nQuantidade necessária de ingredientes:");
+Console.WriteLine("Queijo: " + kgQueijo.ToString("F2") + " kg");
+Console.WriteLine("Presunto: " + kgPresunto.ToString("F2") + " kg");
+Console.WriteLine("Carne: " + kgCarne.ToString("F2") + " kg");
