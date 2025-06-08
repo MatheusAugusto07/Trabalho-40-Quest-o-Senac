@@ -1,0 +1,15 @@
+int horasNormais, horasExtras, salario;
+ 
+
+
+Console.Write("Digite a quantidade de horas normais trabalhadas: ");
+horasNormais = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Digite a quantidade de horas extras trabalhadas: ");
+horasExtras = Convert.ToInt32(Console.ReadLine());
+
+
+salario = (horasNormais * 10) + (horasExtras * 15);
+
+
+Console.WriteLine("O salário do funcionário é: R$ " + salario);
