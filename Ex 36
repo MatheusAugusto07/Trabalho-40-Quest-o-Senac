@@ -1,0 +1,11 @@
+double salarioMinimo, salarioFuncionario, quantidade;
+
+Console.Write("Digite o valor do salário mínimo: ");
+salarioMinimo = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Digite o valor do salário do funcionário: ");
+salarioFuncionario = Convert.ToDouble(Console.ReadLine());
+
+quantidade = salarioFuncionario / salarioMinimo;
+
+Console.WriteLine("O funcionário ganha " + quantidade + " salários mínimos.");
