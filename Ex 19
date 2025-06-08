@@ -1,0 +1,9 @@
+int quantidadeFrangos;
+double custoTotal;
+
+Console.Write("Digite a quantidade de frangos: ");
+quantidadeFrangos = Convert.ToInt32(Console.ReadLine());
+
+custoTotal = quantidadeFrangos * (4.00 + 3.50);
+
+Console.WriteLine("O custo total com os anéis é: R$ " + custoTotal.ToString("F2"));
