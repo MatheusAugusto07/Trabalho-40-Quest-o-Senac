@@ -1,0 +1,13 @@
+double salarioFixo, totalVendas;
+
+        Console.Write("Digite o salário fixo do funcionário: ");
+        salarioFixo = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Digite o total de vendas efetuadas: ");
+        totalVendas = Convert.ToDouble(Console.ReadLine());
+
+        double comissao = totalVendas * 0.04;
+        double salarioFinal = salarioFixo + comissao;
+
+        Console.WriteLine($"Comissão: R$ {comissao:F2}");
+        Console.WriteLine($"Salário final: R$ {salarioFinal:F2}");
