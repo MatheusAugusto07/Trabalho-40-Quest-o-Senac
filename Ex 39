@@ -1,0 +1,18 @@
+double salario, conta1, conta2, conta1ComMulta, conta2ComMulta, totalContas, restante;
+
+Console.Write("Digite o salário do João: R$ ");
+salario = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Digite o valor da primeira conta (C1): R$ ");
+conta1 = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Digite o valor da segunda conta (C2): R$ ");
+conta2 = Convert.ToDouble(Console.ReadLine());
+
+conta1ComMulta = conta1 + (conta1 * 0.02);
+conta2ComMulta = conta2 + (conta2 * 0.02);
+totalContas = conta1ComMulta + conta2ComMulta;
+restante = salario - totalContas;
+
+Console.WriteLine("Total das contas com multa: R$ " + totalContas.ToString("F2"));
+Console.WriteLine("Valor restante do salário de João: R$ " + restante.ToString("F2"));
