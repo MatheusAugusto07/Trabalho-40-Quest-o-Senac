@@ -1,0 +1,23 @@
+ int m1, m5, m10, m25, m50, m100;
+
+        Console.Write("Digite a quantidade de moedas de 1 centavo: ");
+        m1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Digite a quantidade de moedas de 5 centavos: ");
+        m5 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Digite a quantidade de moedas de 10 centavos: ");
+        m10 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Digite a quantidade de moedas de 25 centavos: ");
+        m25 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Digite a quantidade de moedas de 50 centavos: ");
+        m50 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Digite a quantidade de moedas de 1 real: ");
+        m100 = Convert.ToInt32(Console.ReadLine());
+
+        double total = (m1 * 0.01) + (m5 * 0.05) + (m10 * 0.10) + (m25 * 0.25) + (m50 * 0.50) + (m100 * 1.00);
+
+        Console.WriteLine($"O total economizado por Pedrinho é: R$ {total:F2}");
