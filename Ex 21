@@ -1,0 +1,14 @@
+ int qtdLatas, qtdGarrafa600, qtdGarrafa2L;
+
+        Console.Write("Digite a quantidade de latas de 350 ml: ");
+        qtdLatas = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Digite a quantidade de garrafas de 600 ml: ");
+        qtdGarrafa600 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Digite a quantidade de garrafas de 2 litros: ");
+        qtdGarrafa2L = Convert.ToInt32(Console.ReadLine());
+
+        double totalLitros = (qtdLatas * 0.35) + (qtdGarrafa600 * 0.6) + (qtdGarrafa2L * 2);
+
+        Console.WriteLine($"O total de litros de refrigerante comprado foi: {totalLitros} litros.");
