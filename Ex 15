@@ -1,0 +1,16 @@
+int parteCarlos, parteAndre;
+double valorConta;
+double parteFelipe;
+
+Console.Write("Digite o valor total da conta (use vírgula para centavos): R$ ");
+valorConta = Convert.ToDouble(Console.ReadLine());
+
+parteCarlos = (int)(valorConta / 3);
+parteAndre = parteCarlos;
+
+parteFelipe = valorConta - parteCarlos - parteAndre;
+
+Console.WriteLine("\n--- VALOR DIVIDIDO ---");
+Console.WriteLine("Carlos paga: R$ " + parteCarlos + ",00");
+Console.WriteLine("André paga: R$ " + parteAndre + ",00");
+Console.WriteLine("Felipe paga: R$ " + parteFelipe.ToString("F2"));
