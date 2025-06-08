@@ -1,0 +1,11 @@
+int peso;
+double pesoEngordar, pesoEmagrecer;
+
+Console.Write("Digite o peso da pessoa (em kg): ");
+peso = Convert.ToInt32(Console.ReadLine());
+
+pesoEngordar = peso + (peso * 0.15);
+pesoEmagrecer = peso - (peso * 0.20);
+
+Console.WriteLine("O novo peso se a pessoa engordar 15% é: " + pesoEngordar + " kg");
+Console.WriteLine("O novo peso se a pessoa emagrecer 20% é: " + pesoEmagrecer + " kg");
