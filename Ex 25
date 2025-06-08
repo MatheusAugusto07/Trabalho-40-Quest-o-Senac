@@ -1,0 +1,12 @@
+double raio, altura, volumeM3, volumeLitros;
+
+        Console.Write("Digite o raio da base da caixa d'água (em metros): ");
+        raio = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Digite a altura da caixa d'água (em metros): ");
+        altura = Convert.ToDouble(Console.ReadLine());
+
+        volumeM3 = Math.PI * Math.Pow(raio, 2) * altura;
+        volumeLitros = volumeM3 * 1000;
+
+        Console.WriteLine($"O volume da caixa d'água é de {volumeLitros:F2} litros.");
