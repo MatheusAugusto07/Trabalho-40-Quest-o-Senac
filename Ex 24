@@ -1,0 +1,11 @@
+double litrosRefresco, litrosEssencia, litrosXarope;
+
+        Console.Write("Digite a quantidade de litros de refresco desejada: ");
+        litrosRefresco = Convert.ToDouble(Console.ReadLine());
+
+        litrosEssencia = (8.0 / 10.0) * litrosRefresco;
+        litrosXarope = (2.0 / 10.0) * litrosRefresco;
+
+        Console.WriteLine($"Para {litrosRefresco} litros de refresco, são necessários:");
+        Console.WriteLine($"{litrosEssencia:F2} litros de essência");
+        Console.WriteLine($"{litrosXarope:F2} litros de xarope");
