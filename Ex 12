@@ -1,0 +1,12 @@
+int salarioInicial, salarioComAumento, salarioFinal;
+
+Console.Write("Digite o salário do funcionário (valor inteiro em reais): R$ ");
+salarioInicial = Convert.ToInt32(Console.ReadLine());
+
+salarioComAumento = salarioInicial * 115 / 100;
+
+salarioFinal = salarioComAumento * 92 / 100;
+
+Console.WriteLine("Salário inicial: R$ " + salarioInicial);
+Console.WriteLine("Salário com aumento de 15%: R$ " + salarioComAumento);
+Console.WriteLine("Salário final com desconto de 8%: R$ " + salarioFinal);
