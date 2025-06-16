@@ -1,4 +1,4 @@
-int Preçolitro, valorlitro, litos, valorpago;
+decimal Preçolitro, valorlitro, litos, valorpago;
 
 Console.WriteLine("Digite o preço da gasolina");
 Preçolitro = Convert.ToInt32(Console.ReadLine());
